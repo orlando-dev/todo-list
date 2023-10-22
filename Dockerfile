@@ -11,6 +11,6 @@ FROM openjdk:17-jdk-slim
 
 EXPOSE 8081
 
-COPY --from=build /target/todolist-1.0.0.jar app.jar
+COPY --from=build /target/todo-list-1.0.0.jar app.jar
 
 CMD ["java", "-jar", "app.jar"]
